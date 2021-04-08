@@ -15,6 +15,20 @@ document.querySelector("#pause").addEventListener("click", function() {
 	video.pause()
 });
 
+
+
+document.querySelector("#slower").addEventListener("click", function() {
+	console.log("Slow Down Video");
+	video.playbackRate *= 95;
+	console.log("New speed is "+ video.playbackRate);
+});
+
+document.querySelector("#faster").addEventListener("click", function() {
+	console.log("Speeden Up Video");
+	video.playbackRate /= 95;
+	console.log("New speed is "+ video.playbackRate)
+});
+
 document.querySelector("#vintage").addEventListener("click", function() {
 	console.log("Changing CSS");
 	video.classList.add("oldSchool")
