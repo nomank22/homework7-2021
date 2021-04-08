@@ -10,6 +10,11 @@ document.querySelector("#play").addEventListener("click", function() {
 	video.play()
 });
 
+document.querySelector("#pause").addEventListener("click", function() {
+	console.log("Pause Video");
+	video.pause()
+});
+
 document.querySelector("#vintage").addEventListener("click", function() {
 	console.log("Changing CSS");
 	video.classList.add("oldSchool")
