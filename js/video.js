@@ -39,3 +39,10 @@ document.querySelector("#orig").addEventListener("click", function() {
 	console.log("Removing CSS");
 	video.classList.remove("oldSchool")
 });
+
+document.querySelector("#slider").addEventListener("click", function() {
+	console.log("Changing Volume");
+	console.log(this.value)
+	video.volume = this.value /100
+	document.querySelector("#volume").innerHTML= video.volume *100 +"%"
+});
